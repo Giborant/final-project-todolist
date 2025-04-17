@@ -36,8 +36,8 @@ func Run() {
 	//api.Init()
 	port := getPort()
 	// Запуск приколов
-	err := http.ListenAndServe(port, nil)
 	log.Printf("Сервер запущен на http://localhost%s\n", port)
+	err := http.ListenAndServe(port, nil)
 	if err != nil {
 		log.Fatal("Ошибка запуска сервера: ", err)
 	}
